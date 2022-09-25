@@ -140,7 +140,7 @@ footer{
         justify-content: stretch;
     }
     .nav__element{
-        justify-content: center;
+        justify-content: space-evenly;
 
     }
     .nav__element__li{
