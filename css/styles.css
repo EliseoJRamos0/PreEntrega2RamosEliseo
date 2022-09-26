@@ -136,28 +136,35 @@ footer{
 }
  /*MEDIAQUERY*/
  @media screen and (max-width: 768px) {
-    .nav{
-        justify-content: stretch;
-    }
+     .nav{
+         justify-content:flex-start;
+     }
     .nav__element{
-        justify-content: space-evenly;
+        width: 85%
+        
 
     }
     .nav__element__li{
-        padding:8px ;
+        padding:5px ;
     }
     .nav__element__li__a{
         padding: 0;
         width: 48px;
         text-align: center;
+        font-weight: 500;
+        font-size: 1.rem
     }
     .icon{
-        width: 20px;
+        width: 120;
     }
+     .home{
+         width: 100%
+     }
     .home p{
         text-align: center;
         margin-top: 300px;
         border: #433F3D;
+        font-size: 2.3rem;
     }
 }
 
@@ -166,33 +173,93 @@ footer{
 /*GALERIA*/
 .grid__galeria{
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 0.1fr 2fr auto;
+    grid-template-rows: 10% auto 10%;
     grid-template-areas: 
-    header
-    sectionGaleria
-    footer
+    "header"
+    "sectionGaleria"
+    "footerg"
      ;
     background-color: #433F3D;
+    height: 100vh;}
+.header{
+    grid-area: header;
+    height: 10vh;
 }
+.nav{
+    height: 10vh;
+    width: 100vw;
+}
+
+/*section galeria*/
 .sectionGaleria{
-    height: 100%;
+    grid-area: sectionGaleria;
+    height: 80vh;
 }
-.box{
+.boxG{
     display: flex;
-    flex-direction: row;
     justify-content:space-around;
     width: 100%;
-    
-    align-items: center;
+    height: 100%;
     background-color:#433F3D;
 
 }
-.box__imagen{
+.box__info{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+    width: 90%;
+    height: 99%;
     
+}
+.box__info:hover{
+    background-color: #696767;
+}
+.box__info p{
+    text-align: center;
+    margin-top: 10%;
+    
+} 
+.box__info__imagen{
     width: 200px;
-    height: 200px;}
+    height: 200px;
+padding: 5px}
 
 
+
+
+
+
+
+.footerg{ 
+    display: flex;
+    grid-area: footerg;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .grid__galeria{
+       
+    }
+    .sectionGaleria{
+        height: 100%
+    }
+    .boxG{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;   
+    }
+    .box__info{
+        padding: 5%
+    }
+    
+}
+.footerg{
+    
+}
     
  
