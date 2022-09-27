@@ -217,8 +217,14 @@ footer{
     background-color: #696767;
 }
 .box__info p{
+    padding: 2%;
+    font-size: 0.65rem;
+    color: aliceblue;
+    font-weight: 200;
     text-align: center;
-    margin-top: 10%;
+    padding-top: 8%;
+    justify-content: center;
+    align-items: center;
     
 } 
 .box__info__imagen{
