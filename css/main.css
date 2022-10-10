@@ -9,7 +9,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-rows: 3.5rem 1fr auto 10%;
+  grid-template-rows: 3.5rem 1fr auto 3.5rem;
   grid-template-areas: "header" "section" "section2" "footer";
   background-color: #433F3D;
   height: 100vh; }
@@ -123,7 +123,7 @@ body {
 /*GALERIA*/
 .grid__galeria {
   display: grid;
-  grid-template-rows: 3.5rem 80% 10%;
+  grid-template-rows: 3.5rem auto 4rem;
   grid-template-areas: "header" "sectionGaleria" "footer";
   background-color: #433F3D;
   height: 100vh; }
@@ -153,7 +153,8 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100%; } }
+      height: 100%;
+      flex-wrap: nowrap; } }
 
 .grid__obras {
   display: grid;
@@ -167,6 +168,14 @@ body {
   text-align: center;
   width: 100%; }
   .section__obras .obras {
-    width: 90%; }
-    .section__obras .obras .img {
-      width: 70%; }
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .section__obras .obras .obras__caja {
+      margin: 1rem; }
+      .section__obras .obras .obras__caja .img {
+        width: 600px;
+        height: 400px; }
