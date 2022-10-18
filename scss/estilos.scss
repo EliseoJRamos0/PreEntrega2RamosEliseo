@@ -55,12 +55,20 @@
                                                 }
                                             }
                                         }
-                                    
-                                    .icon{
-                                        width: 8%;
-                                        margin: 0.4rem; }
                                     }
-                             }
+                                    
+                                
+         .a_icon{width: 7%;
+                margin: 0.4rem;
+         .icon{
+            width: 100%;
+        height: 100%;}
+
+         }
+        }
+                                
+                             
+                            
                                        
                             
                         
@@ -100,8 +108,10 @@
         padding: 10px;
         font-size: large;
         .box{
+            background-color: map-get($section , txt );
             .box__text{
                 font-weight: 600;
+                
             }
         }
     }
@@ -213,7 +223,7 @@
                         &:hover{
                             transform: scale(1.3);
                         }
-                        &:nth-child()
+                        
                         
                     }
                 }
@@ -258,6 +268,7 @@
         width: 100%;
         padding: 2rem;
         &__titulo{
+            background-color: map-get($section , txt );
 
         
         h3{
@@ -276,6 +287,7 @@
                         align-items: center;
                         justify-content:space-between;
                     .obras__caja{
+                        background-color: map-get($section , txt );
                         margin: 0.5rem;
                         padding: 0.5rem;
                         align-items: center;
@@ -325,16 +337,18 @@
                     justify-content: space-between;
                     flex-direction: column;
                     h3{
-                    margin: 20px;
+                    padding: 20px;
                     justify-content: center;
                     text-align: center;
                     align-items: center;
+                    }
+                    p{
+                        padding: 13px;
+                    }
                 
 
-                }
-                p{
-
-                }
+                
+                
             }
                         .obras{
                             padding: 3rem 0 3rem 0;
@@ -352,7 +366,7 @@
                                     width: 100%;
                                 &__p{
                                   width: 100%;
-                                  padding: 0;
+                                  padding: 10px;
                                   margin: 0;}
                                 }
                                 &__titulo{
@@ -398,8 +412,20 @@
         flex-direction: column;
         margin: 10px;
         text-align: center;
+        align-items: center;
+        h3{
+            background-color: map-get($section , txt );
+            padding: 10px;
+        }
+        p{
+            background-color: map-get($section , txt );
+            
+           
+        }
         
         ul{
+            background-color: map-get($section , txt );
+            padding: 10px;
             li{
                list-style: none;
                font-weight: 500;
