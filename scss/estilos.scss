@@ -114,6 +114,7 @@
         font-size: large;
         .box{
             background-color: map-get($section , txt );
+            padding: 1rem;
             .box__text{
                 font-weight: 600;
                 

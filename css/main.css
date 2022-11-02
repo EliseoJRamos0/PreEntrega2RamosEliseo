@@ -91,7 +91,8 @@ body {
   padding: 10px;
   font-size: large; }
   .section2 .box {
-    background-color: #535252; }
+    background-color: #535252;
+    padding: 1rem; }
     .section2 .box .box__text {
       font-weight: 600; }
 
